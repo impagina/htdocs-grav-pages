@@ -8,6 +8,7 @@
 
 $hook_secret = file_get_contents('secret.txt');
 print(">".trim($hook_secret)."<");
+print_r($_SERVER);
 
 if (!isset($_SERVER['HTTP_X_HUB_SIGNATURE'])) {
     throw new \Exception("HTTP header 'X-Hub-Signature' is missing.");
