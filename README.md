@@ -1,8 +1,17 @@
 # Grav for Impagina
 
+This repository contains the content for the [Grav](https://getgrav.org) based [impagina.org](http://impagina.org) website.
+
+It's the main repository for the Impagina site.
+
+Please refer to:
+
+- [htdocs-grav-theme](https://github.com/impagina/htdocs-grav-theme) for the theme.
+- [htdocs-grav-config](https://github.com/impagina/htdocs-grav-config) for the config files.
+
 ## Contributing
 
-If you want contribute to the impagina.org website, you can:
+If you want contribute to the Impagina website, you can:
 
 - Propose new content for the [pages](user/pages/).
 - Propose changes to the [impagina-quark theme](user/themes/impagina-quark/)
@@ -32,6 +41,8 @@ Planned features that where we could need some help:
 
 
 ## Installing
+
+Instructions for setting up the Impagina server or a local development instance:
 
 - make sure that your user is in the `www-data` group:  
   `sudo usermod -aG www-data ale`
@@ -67,9 +78,25 @@ Planned features that where we could need some help:
 
   and disable the cache.
 - follow <https://learn.getgrav.org/advanced/environment-config> to create a `user/ww.impagina.org/config/system.yaml` that sets the develpment `custom_base_url_relative`.
-
 - get the three git repositories:
   - grav-
+- syncing with the github repository with a webhook:
+  - add to the beginning of the security section in the Grav `.htaccess`:
+
+    ```
+    RewriteCond %{REQUEST_URI} !^/user/pages/sync/?$
+    RewriteCond %{REQUEST_URI} !^/user/themes/sync/?$
+    RewriteCond %{REQUEST_URI} !^/user/config/sync/?$
+    ```
+
+### Deploy on the metanet server
+
+- Activate the ssh access in the "Web Hosting Access" section (it should be the first one).
+- wget the grav zip file (it will be saved to `1.5.x` and you will have to rename it to `grav.zip`.
+- Move the `security.yaml` out of `config`, `git clone https://github.com/impagina/htdocs-grav-config.git config`, and move `security.yaml` back in.
+- `git clone https://github.com/impagina/htdocs-grav-theme.git impagina-quark` in the themes.
+- Delete the `pages` directory and replace it with the git repository: `git clone https://github.com/impagina/htdocs-grav-pages.git pages`
+- Copy the `secret.txt` in each `sync` directory.
 
 Resources:
 
@@ -137,3 +164,4 @@ Pages to be done:
 - check that all the images can be used!
   - mail sent to martin
 - use spectre css cards for the news: https://picturepan2.github.io/spectre/components/cards.html
+- find how to allow the sync script to be an exception in the grav's `.htaccess` security section. currently, i've removed the `.php` filese from the exceptions. (which is not a big issue, since there are no other php files in there)
