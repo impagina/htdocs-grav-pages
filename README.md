@@ -92,11 +92,14 @@ Instructions for setting up the Impagina server or a local development instance:
 ### Deploy on the metanet server
 
 - Activate the ssh access in the "Web Hosting Access" section (it should be the first one).
+- `ssh impagina@impagina.org -p 2121`
 - wget the grav zip file (it will be saved to `1.5.x` and you will have to rename it to `grav.zip`.
 - Move the `security.yaml` out of `config`, `git clone https://github.com/impagina/htdocs-grav-config.git config`, and move `security.yaml` back in.
 - `git clone https://github.com/impagina/htdocs-grav-theme.git impagina-quark` in the themes.
 - Delete the `pages` directory and replace it with the git repository: `git clone https://github.com/impagina/htdocs-grav-pages.git pages`
 - Copy the `secret.txt` in each `sync` directory.
+- Remove the restriction for `.php` files in the `.htaccess`
+- Disable the ssh access.
 
 Resources:
 
