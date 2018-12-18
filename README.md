@@ -21,6 +21,7 @@ You can do so by making a pull request or by filling a ticket in this repository
 Planned features that where we could need some help:
 
 - Add https.
+- Remove the gray lines between the main page's modules.
 - Making the site multilanguage and, then, translate the content.
 - Provide a concept for getting a regular news stream.
 - Create in grav all the pages linked from the footer.
