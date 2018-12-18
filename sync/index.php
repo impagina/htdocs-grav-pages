@@ -7,8 +7,6 @@
 // error_reporting(E_ALL);
 
 $hook_secret = file_get_contents('secret.txt');
-print(">".trim($hook_secret)."<");
-print_r($_SERVER);
 
 if (!isset($_SERVER['HTTP_X_HUB_SIGNATURE'])) {
     throw new \Exception("HTTP header 'X-Hub-Signature' is missing.");
@@ -30,8 +28,8 @@ switch (strtolower($_SERVER['HTTP_X_GITHUB_EVENT'])) {
     case 'ping':
         echo 'pong';
         break;
-    // case 'push':
-        // shell_exec('cd  user/pages/ && git reset --hard HEAD && git pull' );
+    case 'push':
+        shell_exec('cd  user/pages/ && git reset --hard HEAD && git pull' );
     case 'create':
         break;
     default:
