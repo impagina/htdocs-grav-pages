@@ -1,5 +1,5 @@
 ---
-hero_classes: overlay-dark white-text
+hero_classes: overlay-dark white-text home
 ---
 # Scribus
 ## Community Site

@@ -3,7 +3,7 @@ title: News
 menu: News
 show_breadcrumbs: true
 show_pagination: true
-hero_classes: white-text
+hero_classes: white-text header
 content:
     items: '@self.children'
     limit: 6
