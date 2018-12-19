@@ -6,4 +6,4 @@ hero_classes: overlay-dark white-text home
 
 ## Bring Blank Pages to Life
 
-[Download Scribus](../../download?classes=btn,btn-primary,btn-lg)
+[Download Scribus](download?classes=btn,btn-primary,btn-lg)
