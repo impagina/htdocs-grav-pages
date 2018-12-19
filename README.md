@@ -22,6 +22,7 @@ Planned features that where we could need some help:
 
 - Add https.
 - Remove the gray lines between the main page's modules.
+- Simplify the buttons (one file with sections for each button? or one file with sections for all the buttons?... just create a specific module for it)
 - Making the site multilanguage and, then, translate the content.
 - Provide a concept for getting a regular news stream.
 - Create in grav all the pages linked from the footer.
