@@ -31,7 +31,7 @@ Planned features that where we could need some help:
 - Make the headers slimmer.
 - Add the Impressum, with the sources for the images
 - Review and finish the "tile" grav module item (add the buttons...)
-- Test (improve?9 and eventually install the font awesome plugin
+- Test (improve?) and eventually install the font awesome plugin
 - Check why the grav's font-awesome icons are not as nice as martin's (wordpress) ones.
 - Add the "container" class around the just-text module template... but allow to disable it, when in an horizontal context.
 - Publish the Github development manual and link it from the "Developer" button in "Contribute"
@@ -40,6 +40,7 @@ Planned features that where we could need some help:
 - Navigation:
   - if we get more items, do not create sub menus but add a "More" item with the futher items.
 - A (free) comment engine.
+  - grav does have a comment plugin... but it might not easy to moderate without the admin interface
 
 
 ## Installing
@@ -106,6 +107,11 @@ Instructions for setting up the Impagina server or a local development instance:
 Resources:
 
 - [Allow subfolder url rewrite](https://github.com/getgrav/grav/pull/896)
+
+## Remarks
+
+- pages starting with the `00.` number are not published yet (`published: false`).
+- pages starting with the `99.` number are not shown in the navigation (`visible: false`).
 
 ## A custom theme
 
