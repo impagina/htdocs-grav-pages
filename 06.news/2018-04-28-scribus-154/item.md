@@ -1,7 +1,6 @@
 ---
 title: Scribus 1.5.4 Released
 hero_image:
-
 ---
 ## Scribus 1.5.4 Released
 

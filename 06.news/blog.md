@@ -8,8 +8,8 @@ content:
     items: '@self.children'
     limit: 6
     order:
-        by: date
-        dir: desc
+        by: default
+        dir: asc
     pagination: true
 feed:
     description: 'Sample Blog Description'
