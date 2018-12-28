@@ -149,6 +149,7 @@ Get the Roboto font in 300 and 400 weight + italic.
 
 Pages to be done:
 
+- Add anchors for each platform and version
 - Create a plugin for showing markdown documentations from github
   - https://github.com/OleVik/grav-plugin-bibliography
 - From the top navigation:

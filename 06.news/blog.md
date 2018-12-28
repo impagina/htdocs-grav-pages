@@ -3,6 +3,7 @@ title: News
 menu: News
 show_breadcrumbs: true
 show_pagination: true
+hero_link_start: false
 hero_classes: white-text header
 content:
     items: '@self.children'

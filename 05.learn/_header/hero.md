@@ -1,5 +1,5 @@
 ---
-hero_inline: true
+hero_link_start: false
 hero_classes: overlay-dark white-text header
 ---
 # Learn Scribus
