@@ -149,9 +149,9 @@ Get the Roboto font in 300 and 400 weight + italic.
 
 Pages to be done:
 
+- Create a plugin for showing markdown documentations from github
+  - https://github.com/OleVik/grav-plugin-bibliography
 - From the top navigation:
-  - get the news to work correctly
-    - check if changing `rewrite_base` in the `.htaccess` does make a difference
   - showcase
 - From the footer
   - Write some code (Contribute)
@@ -161,15 +161,9 @@ Pages to be done:
   - Contact (irc, mailing list, address of the team, riot)
   - About (really? rather an impressum?)
   - Donations (has to be setup)
-
 - review the current impagina.org
-  - add a license in the footer or in the about
-    - "Where not othwerise mentioned, the content is under the CC-BY license."
   - port the planet
   - rescue the newsletter?
   - contribute > your first patch using github
-
-- check that all the images can be used!
-  - mail sent to martin
 - use spectre css cards for the news: https://picturepan2.github.io/spectre/components/cards.html
 - find how to allow the sync script to be an exception in the grav's `.htaccess` security section. currently, i've removed the `.php` filese from the exceptions. (which is not a big issue, since there are no other php files in there)
