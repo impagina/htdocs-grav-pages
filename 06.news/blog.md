@@ -10,7 +10,7 @@ content:
     limit: 6
     order:
         by: default
-        dir: asc
+        dir: desc
     pagination: true
 feed:
     description: 'Sample Blog Description'

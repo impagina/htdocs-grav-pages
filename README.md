@@ -141,6 +141,20 @@ Get the Roboto font in 300 and 400 weight + italic.
 
 - patch `templates/modular.html.twig` to allow hero modules to also be inside of the page.
 
+## Administration
+
+### Clearing the cache
+
+```
+./bin/grav clear-cache
+```
+
+On a local install, you will probably need to first make the cache writable by the group:
+
+```sh
+sudo find cache -type f -exec chmod g+w {} \;
+```
+
 ## License
 
 - Country flags in "Learn" from <https://github.com/usrz/bootstrap-languages> (Apache License)
