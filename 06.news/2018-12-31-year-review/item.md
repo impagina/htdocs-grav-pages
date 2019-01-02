@@ -16,7 +16,7 @@ Some of the highlights for 2018 were:
   [![](initiation-a-scribus.png?resize=150)](https://boutique.flossmanualsfr.net/home/12-scribus-9791090791411.html)
   Go and buy it. Or help translating it!
 - Norbert has created [Scribus Templates](https://www.scribus-templates.net), a site with dozen of Scribus sample documents.
-  [![](scribus-templates.png?resize=150)](https://www.scribus-templates.net)
+  [![](scribus-templates.png?resize=300)](https://www.scribus-templates.net)
 - On top of fixing bugs, Craig and Jean worked on code improvements that should make Scribus better in the long term:
   - Refactoring efforts to make the Scribus code more readable (return early) and fast (const &)
   - "Moving" to C++ 11 (foreach, nullptr, auto)
