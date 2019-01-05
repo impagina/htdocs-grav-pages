@@ -12,8 +12,8 @@ Some of the highlights for 2018 were:
 
 - [Scribus 1.5.4 has been released](https://wiki.scribus.net/canvas/1.5.4_Release), with a few enhancements relating to the color handling and improvements for running Scribus from the command line.
 - There has been a regain of interest for the scripting, leading a few new contributors (dockattt, Iam_TJ, gibbz) to submit patches. Missing commands have been added to the API and a few misbehaving ones have been fixed.
-- Cédric Gémy's has published [Initiation à Scribus 1.5](https://boutique.flossmanualsfr.net/home/12-scribus-9791090791411.html) for Flossmanuals.
-  [![](initiation-a-scribus.png?resize=150)](https://boutique.flossmanualsfr.net/home/12-scribus-9791090791411.html)
+- Cédric Gémy's has published [Initiation à Scribus 1.5](https://boutique.flossmanualsfr.net/home/70-initiation-a-scribus-9791090791640.html) for Flossmanuals.
+  [![](initiation-a-scribus.png?resize=150)](https://boutique.flossmanualsfr.net/home/70-initiation-a-scribus-9791090791640.html)
   Go and buy it. Or help translating it!
 - Norbert has created [Scribus Templates](https://www.scribus-templates.net), a site with dozen of Scribus sample documents.
   [![](scribus-templates.png?resize=300)](https://www.scribus-templates.net)
