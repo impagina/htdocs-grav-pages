@@ -89,6 +89,15 @@ Instructions for setting up the Impagina server or a local development instance:
     RewriteCond %{REQUEST_URI} !^/user/config/sync/?$
     ```
 
+### using gpm
+
+before and after using gpm you probably need:
+
+```
+sudo chgrp -R www-data cache
+sudo chmod -R g+w cache
+```
+
 ### Deploy on the metanet server
 
 - Activate the ssh access in the "Web Hosting Access" section (it should be the first one).
@@ -178,6 +187,7 @@ Pages to be done:
   - Donations (has to be setup)
 - review the current impagina.org
   - port the planet
+    - https://github.com/OleVik/grav-plugin-twigfeeds
   - rescue the newsletter?
   - contribute > your first patch using github
 - use spectre css cards for the news: https://picturepan2.github.io/spectre/components/cards.html
