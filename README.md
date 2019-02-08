@@ -42,61 +42,9 @@ Planned features that where we could need some help:
 
 ## Installing
 
-Instructions for setting up the Impagina server or a local development instance:
-
-- make sure that your user is in the `www-data` group:  
-  `sudo usermod -aG www-data ale`
-- make sure that the `httpdocs` belongs to the  `www-data` group and the same for the files created in it:
-  - `chgrp www-data httpdocs`
-  - `chmod g+s httpdocs`
-- get the current grav download (without admin):
-  - `cd httpdocs`
-    `wget ...`
-  - `unzip  grav-*.zip`
-- add to the web root an `.htacces` that redirects everything not found to grav:
-
-  ```
-  RewriteCond %{REQUEST_URI} !^/grav/
-  RewriteRule ^$ /grav [QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ /grav/$1 [L,QSA]
-  ```
-
-  (redirects the root to `grav` then does the same for all non existing files and directories).
-
-- if needed, patch the `grav/.htaccess` file to get it to work (no `if module`...).
-
-- define in the `system.yaml` (does not seem to work):
-
-  ```yaml
-  custom_base_url: 'http://impagina.org'
-
-  session:
-    path: /
-  ```
-
-  and disable the cache.
-- follow <https://learn.getgrav.org/advanced/environment-config> to create a `user/ww.impagina.org/config/system.yaml` that sets the develpment `custom_base_url_relative`.
+- install Grav
 - get the three git repositories:
   - grav-
-- syncing with the github repository with a webhook:
-  - add to the beginning of the security section in the Grav `.htaccess`:
-
-    ```
-    RewriteCond %{REQUEST_URI} !^/user/pages/sync/?$
-    RewriteCond %{REQUEST_URI} !^/user/themes/sync/?$
-    RewriteCond %{REQUEST_URI} !^/user/config/sync/?$
-    ```
-
-### using gpm
-
-before and after using gpm you probably need:
-
-```
-sudo chgrp -R www-data cache
-sudo chmod -R g+w cache
-```
 
 ### Deploy on the metanet server
 
@@ -107,6 +55,7 @@ sudo chmod -R g+w cache
 - `git clone https://github.com/impagina/htdocs-grav-theme.git impagina-quark` in the themes.
 - Delete the `pages` directory and replace it with the git repository: `git clone https://github.com/impagina/htdocs-grav-pages.git pages`
 - Copy the `secret.txt` in each `sync` directory.
+  - TODO: the `secret.txt` should be outside of the htdocs.
 - Remove the restriction for `.php` files in the `.htaccess`
 - Disable the ssh access.
 
@@ -118,37 +67,6 @@ Resources:
 
 - pages starting with the `00.` number are not published yet (`published: false`).
 - pages starting with the `99.` number are not shown in the navigation (`visible: false`).
-
-## A custom theme
-
-Follow <https://learn.getgrav.org/themes/customization> to create the `impagina-quark` theme with the files:
-
-- `impagina-quark.yaml`
-- `blueprints.yaml`
-- `images/logo/impagina.png`
-- `css/custom.css`
-
-In `impagina-quark.yaml` add:
-
-```yaml
-custom_logo:
-  - name: 'impagina.png'
-custom_logo_mobile:
-  - name: 'impagina.png'
-```
-
-activate the theme in `user/config/system.yaml`:
-
-```yaml
-pages:
-  theme: impagina-quark
-```
-
-On the development server, disable the cache in `user/config/system.yaml` (also for Twig) and don't forget to enable it for the production site.
-
-Get the Roboto font in 300 and 400 weight + italic.
-
-- patch `templates/modular.html.twig` to allow hero modules to also be inside of the page.
 
 ## Administration
 
