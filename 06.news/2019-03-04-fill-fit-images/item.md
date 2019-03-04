@@ -1,6 +1,5 @@
 ---
 title: Fitting and filling images
-hero_image: hero.png
 author: Ale Rimoldi
 ---
 ## Fitting images and filling frames
