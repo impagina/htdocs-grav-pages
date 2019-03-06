@@ -10,13 +10,13 @@ Scribus can resize image frames to their content, but if you want things to be c
 
 Since forever, you have been able to choose two scaling modes for images: free and to frame size scaling. On top of it, you  have had the context menu, to resize the frame to its content.
 
-![Scaling the frame to the image](image-frame-to-image-size.gif)
+![Scaling the frame to the image](image-frame-to-image-size.mp4)
 
 That's really handy!
 
 But, if you further move the image inside of the frame, it's hard to get _exact_ results:
 
-![Moving the image in the frame](image-fit-old.gif)
+![Moving the image in the frame](image-fit-old.mp4)
 
 On top of it, I still can't figure a use case, where you would want to rotate an image that is set to fit the frame:
 
@@ -26,7 +26,7 @@ That's what free scaling is for!
 
 Further on, there is one more common use case that is not well supported by Scribus: filling a frame with an image where the proportions of the image do not match the frame:
 
-![Fill the frame with the image](image-fill-old.gif)
+![Fill the frame with the image](image-fill-old.mp4)
 
 Of course, it's not that hard:
 
@@ -64,7 +64,7 @@ For getting there, I've added a third option: Filling the frame.
 
 ![The new fill frame option](pp-fill-frame.png)
 
-The patch is almost ready, but not there yet. The main reason for the delay: a long time ago, somebody decided that "Free scale" images were the `true` ones, all the others being `false`: of course, it's impossible use `maybe` for a third option... Not to mention that this false dichotomy has sometimes been used in _creative_ ways and refactoring it into a proper `enum` with three states gets even harder.
+The new option is shortly described in [a ticket in the bug tracker(https://bugs.scribus.net/view.php?id=15560) and the patch is almost ready, only a few details are missing. The main reason for the delay: a long time ago, somebody decided that "Free scale" images were the `true` ones, all the others being `false`: of course, it's impossible use `maybe` for a third option... Not to mention that this false dichotomy has sometimes been used in _creative_ ways and refactoring it into a proper `enum` with three states gets even harder.
 
 Update will follow as soon as the patch is submitted to the issue tracker.
 
