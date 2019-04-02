@@ -22,5 +22,6 @@ content:
         - _devel-linux
         - _nightly
         - _nightly-linux
+        - _source
         - _source-code
 ---
