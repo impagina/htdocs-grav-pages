@@ -20,5 +20,6 @@ content:
         - _devel-windows
         - _devel-macos
         - _devel-linux
+        - _nightly-linux
         - _source-code
 ---
