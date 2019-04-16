@@ -14,6 +14,7 @@ content:
         - _claim
         - _buttons
         - _more-claim
+        - _english
         - _french
         - _german
 ---
