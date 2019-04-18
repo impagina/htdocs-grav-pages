@@ -1,22 +1,20 @@
-# Grav for Impagina
+# Grav for Impagina: the 
 
 This repository contains the content for the [Grav](https://getgrav.org) based [impagina.org](http://impagina.org) website.
 
-It's the main repository for the Impagina site.
-
 Please refer to:
 
-- [htdocs-grav-theme](https://github.com/impagina/htdocs-grav-theme) for the theme.
-- [htdocs-grav-config](https://github.com/impagina/htdocs-grav-config) for the config files.
+- <https://github.com/impagina/htdocs-grav-theme> for the theme for the Impagina site.
+
+
 
 ## Contributing
 
-If you want contribute to the Impagina website, you can:
+You can contribute to the content of the [Impagina](http://impagina.org) website by opening issues or making pull requests.
 
-- Propose new content for the [pages](user/pages/).
-- Propose changes to the [impagina-quark theme](user/themes/impagina-quark/)
+If you want to improve the look and feel, please rever to the [impagina-quark theme](user/themes/impagina-quark/).
 
-You can do so by making a pull request or by filling a ticket in this repository.
+## Future plans
 
 Planned features that where we could need some help:
 
@@ -40,28 +38,6 @@ Planned features that where we could need some help:
   - grav does have a comment plugin... but it might not easy to moderate without the admin interface
 
 
-## Installing
-
-- install Grav
-- get the three git repositories:
-  - grav-
-
-### Deploy on the metanet server
-
-- Activate the ssh access in the "Web Hosting Access" section (it should be the first one).
-- `ssh impagina@impagina.org -p 2121`
-- wget the grav zip file (it will be saved to `1.5.x` and you will have to rename it to `grav.zip`.
-- Move the `security.yaml` out of `config`, `git clone https://github.com/impagina/htdocs-grav-config.git config`, and move `security.yaml` back in.
-- `git clone https://github.com/impagina/htdocs-grav-theme.git impagina-quark` in the themes.
-- Delete the `pages` directory and replace it with the git repository: `git clone https://github.com/impagina/htdocs-grav-pages.git pages`
-- Copy the `secret.txt` in each `sync` directory.
-  - TODO: the `secret.txt` should be outside of the htdocs.
-- Remove the restriction for `.php` files in the `.htaccess`
-- Disable the ssh access.
-
-Resources:
-
-- [Allow subfolder url rewrite](https://github.com/getgrav/grav/pull/896)
 
 ## Remarks
 
