@@ -8,5 +8,5 @@ fa_icon: fa-cogs logo pull-left
 `git clone https://github.com/scribusproject/scribus.git`
 
 A new window will open and the download starts automatically:
-<i class="fa fa-download" aria-hidden="true"></i> [Scribus 1.4.7 tarball](https://sourceforge.net/projects/scribus/files/scribus/1.4.7/scribus-1.4.7.tar.xz/download?target=_blank)
-<i class="fa fa-download" aria-hidden="true"></i> [Scribus 1.5.4 tarball](https://sourceforge.net/projects/scribus/files/scribus-devel/1.5.4/scribus-1.5.4.tar.xz/download?target=_blank)
+<i class="fa fa-download" aria-hidden="true"></i> [Scribus 1.4.8 tarball](https://sourceforge.net/projects/scribus/files/scribus/1.4.8/scribus-1.4.8.tar.xz/download?target=_blank)
+<i class="fa fa-download" aria-hidden="true"></i> [Scribus 1.5.5 tarball](https://sourceforge.net/projects/scribus/files/scribus-devel/1.5.5/scribus-1.5.5.tar.xz/download?target=_blank)

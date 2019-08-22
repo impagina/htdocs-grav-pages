@@ -12,6 +12,6 @@ In some distributions, Scribus 1.5.5 is packaged as "scribus" and there is no st
 - Gentoo,
 - Arch.
 
-For Ubuntu a [PPA is available](https://launchpad.net/~scribus/+archive/ppa?target=_blank)
+For Ubuntu a [PPA is available](https://launchpad.net/~scribus/+archive/ppa?target=_blank). The latest development release is called `scribus-ng`.
 
 For the documentation, you will probably need to activate the "Non Free" Repository.
