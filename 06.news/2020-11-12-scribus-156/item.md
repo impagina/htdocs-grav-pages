@@ -15,7 +15,7 @@ But there are a few things you need to pay attention to:
 
 - Scribus 1.4.x cannot open files that have been saved with Scribus 1.5.x. So, if you want to test 1.5.6, do so on copies of your documents. There is no way back (but you can install both Scribus 1.4 and 1.5 on the same computer).
 - In Scribus 1.5.4, a new text layout engine has been introduced: there can be small changes in the way your text flows. When opening old files, you need to check the hyphenation / line breaks, and look for text overflows or underflows.
-- While Scribus 1.5.6 is probably the most stable version of Scribus ever released, it has some dark areas, that you might want to avoid or use with care. Please read the section below, about the experimental features in this release.
+- Even if Scribus 1.5.6 is probably the most stable version of Scribus ever released, it has some dark areas, that you might want to avoid or use with care. Please read the section below, about the experimental features in this release.
 
 ### What has been fixed?
 
@@ -57,22 +57,22 @@ Of course, it's still worth using the pre-defined keyboard shortcuts, but now yo
 ### Scripting
 
 First, the big news: Scribus is now using Python 3 (except on MacOS which still has Python 2).  
-If you have followed good practices in the Python 2.7 branch, your scripts will still be ok, otherwise, some tweaking will be needed.  
+If you have followed good practices with Python 2.7, your scripts will still be ok, otherwise, some tweaking will be needed.  
 Of course, the scripts distributed with Scribus have been ported to work with Python 3.
 
 We have had several new people starting using the Python Scripter and they discovered bugs and many missing commands in the Scripter API: the result is that we have now a much better Scripter!
 
-Probably, the most important improvements concern the applying, detection and definition of formats and styles.  
+Probably, the most important improvements the formatting and the styles.  
 But many commands have been added and more complex scripts should now be possible.
 
 Ale has created a web version of the Scripter API documentation, built using the available docstrings: [The Scribus Python interface module](https://impagina.org/scribus-scripter-api/) on [impagina.org](https://impagina.org).  
 How is it done? A Python script [exports all docstring to Markdown](https://github.com/aoloe/scribus-script-repository/tree/master/export-scripter-api) and the documentation can then be published as static Html with mkdocs.
 
-### More new features
+### Some more features
 
 Scribus 1.5.6 is not a small release! Here a few more features that have been added:
 
-- Multiple duplicate on pages: This should allow you to avoid the automatic text frames for most use cases.
+- Multiple duplicate on pages: In most cases, it should allow you to avoid the automatic text frames.
 - Snapping guides to items: Very handy for creating master pages!
 - Scribus can now export to PDF 1.6, including embedded OpenType fonts.
 - Code has been added for importing Markdown files. It's still a bit rough around the edges, but it's a good start!
@@ -85,21 +85,21 @@ Scribus 1.5.6 is not a small release! Here a few more features that have been ad
 There are also some news about the Scribus code itself.
 
 - C++ 11 and Qt 5.14 are now required.
-- A big effort has been made to clean up the code, using modern C++ syntax and remove compiler warnings (and dead code).
+- A big effort has been made to clean up the code, using modern C++ syntax and squash many compiler warnings (and dead code has been removed).
 
 ### What is still experimental?
 
 While this Scribus release can be considered stable, there are parts of it that are still experimental and should be _handled with care_:
 
-- Footnotes, Lists, Marks:they have much improved, but those features cannot yet be described as stable. You're welcome to test them, but please check thoroughly if they fit your needs, before starting using them in production.
+- Footnotes, lists, marks: they have much improved, but those features cannot yet be described as stable. You're welcome to test them, but please check thoroughly, if they fit your needs: before starting using them in production.
 - Drop shadows.
 - Tables: this is a special case: technically, they work as specified. But in most (if not all) cases you're better off by using tabs or importing a table from an external program (as SVG, PDF or PNG).
 - Undo: It mostly works, and no document breakage have been reported in a long time. But there are still commands that cannot be undone. In doubt, hands off the Ctrl-z!
 
-Luckily enough, bug in those features will only affect you if you use them and they should not affect the overall stability of Scribus.
+Luckily enough, bug in those features will only affect you, if you use them and they should not affect the overall stability of Scribus.
 
 ### The final notes...
 
-Thanks to everybody has contributed to this release.
+Thanks to everybody has contributed to this release. The work on 1.5.7 has already started...
 
 The [complete changelog](https://bugs.scribus.net/changelog_page.php?version_id=110) is available in the [bug tracker](https://bugs.scribus.net) and you can find the [official release notes](https://wiki.scribus.net/canvas/1.5.6_Release) in the [Wiki](https://wiki.scribus.net).
