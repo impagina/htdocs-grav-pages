@@ -4,6 +4,8 @@ fa_icon: fa-cogs logo pull-left
 ---
 <i class="fa fa-code-fork" aria-hidden="true"></i> [Current Scribus Code from the official SVN server](https://www.scribus.net/websvn/listing.php?repname=Scribus?target=_blank): 
 `svn svn co svn://scribus.net/trunk/Scribus scribus`
+<i class="fa fa-code-fork" aria-hidden="true"></i> [Current Scribus Code from the community maintained Gitlab mirror](https://gitlab.com/scribus/scribus?target=_blank)
+`git clone https://gitlab.com/scribus/scribus.git`
 <i class="fa fa-code-fork" aria-hidden="true"></i> [Current Scribus Code from the community maintained Github mirror](https://github.com/scribusproject/scribus?target=_blank)
 `git clone https://github.com/scribusproject/scribus.git`
 
