@@ -1,13 +1,15 @@
 ---
-title: Scribus 1.5.6 for Linux
+title: Scribus {{ site.var_version_dev }} for Linux
 fa_icon: fa-linux logo pull-left
+process:
+  twig: true
 ---
 A new window will open and the download starts automatically:
-<i class="fa fa-download" aria-hidden="true"></i> [Appimage (64 bit)](https://sourceforge.net/projects/scribus/files/scribus-devel/1.5.6/scribus-1.5.6-linux-x86_64.AppImage/download?target=_blank)
+<i class="fa fa-download" aria-hidden="true"></i> <a href="https://sourceforge.net/projects/scribus/files/scribus-devel/{{ site.var_version_dev }}/scribus-{{ site.var_version_dev }}-linux-x86_64.AppImage/download?target=_blank">Appimage (64 bit)</a>.
 
-In some distributions, Scribus 1.5.6 (or 1.5.7svn) can be obtained from your package manager as "scribus-ng".
+In some distributions, Scribus {{ site.var_version_dev }} (or {{ site.var_version_git }}) can be obtained from your package manager as "scribus-ng".
 
-In some distributions, Scribus 1.5.6 is packaged as "scribus" and there is no stable version:
+In some distributions, Scribus {{ site.var_version_dev }} is packaged as "scribus" and there is no stable version:
 
 - more recent Debian and Ubuntu releases,
 - Gentoo,
