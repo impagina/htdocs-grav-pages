@@ -6,7 +6,7 @@ process:
 ---
 
 A new window will open and the download starts automatically:
-<i class="fa fa-download" aria-hidden="true"></i> <a href="https://sourceforge.net/projects/scribus/files/scribus-devel/{{ site.var_version_dev }}/{{ site.var_version_dev }}-windows-x64.exe/download?target=_blank">Windows 64 Bit (Vista, 7, 8, 10)</a>
+<i class="fa fa-download" aria-hidden="true"></i> <a href="https://sourceforge.net/projects/scribus/files/scribus-devel/{{ site.var_version_dev }}/scribus-{{ site.var_version_dev }}-windows-x64.exe/download?target=_blank">Windows 64 Bit (Vista, 7, 8, 10)</a>
 
 Other options:
 <i class="fa fa-download" aria-hidden="true"></i> <a href="https://sourceforge.net/projects/scribus/files/scribus-devel/{{ site.var_version_dev }}/scribus-{{ site.var_version_dev }}-windows.exe/download?target=_blank">Windows 32 Bit (2000 SP4, XP, Vista, 7, 8, 10)</a>
