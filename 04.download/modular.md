@@ -11,15 +11,15 @@ content:
       dir: asc
       custom:
         - _header
+        - _devel
+        - _devel-windows
+        - _devel-macos
+        - _devel-linux
         - _stable
         - _stable-windows
         - _stable-macos
         - _stable-linux
         - _stable-other
-        - _devel
-        - _devel-windows
-        - _devel-macos
-        - _devel-linux
         - _nightly
         - _nightly-linux
         - _source

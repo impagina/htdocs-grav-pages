@@ -1,9 +1,13 @@
 ---
 class: center-h2 center-p
 ---
-## Choose your version
+## The 10+ years old stable Scribus
 
-Scribus 1.4.8 is the latest stable release. To download it, choose one of the options below…
+Scribus 1.4.8 is the latest stable release.
+
+It's more than 10 years old and you should probably not install or use it anymore. It's also the last one in the 1.4.x series.
+
+To download it, choose one of the options below…
 
 You can get and compile yourself 1.4.9svn but there is no plan to ever release 1.4.9.
 
